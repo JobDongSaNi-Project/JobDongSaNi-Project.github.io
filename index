@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            /* background: linear-gradient(black 50%, rgb(255, 255, 255) 80%,black 90%); */
+            background-color: rgb(238, 233, 226);
+        }
+        .profile-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url("https://avatars.githubusercontent.com/u/81201101?v=4");
+            /* background-color: gray; 프로필 이미지에 해당하는 배경색을 지정하세요. */
+            margin: 0 auto;
+        }
+        
+        .profile-name {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        .site-container {
+            border-radius: 10px;
+            background-color:rgb(156, 204, 156); /* 사이트 정보를 포함하는 div의 배경색을 지정하세요. */
+            width: 300px;
+            padding: 15px;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid rgb(88, 143, 88);
+            
+        }
+        
+        .site-link {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .side-site-link {
+            font-size: 0.7rem;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            
+        }
+        .date{  
+            margin: 0;
+            text-align: right;
+            font-size: 0.7rem;
+            text-decoration: none;
+            color: black;
+            /* font-weight: bold; */
+        }
+        .hr{
+            width: 70%;
+            border : 0px;
+            border-top: 1px dashed #747474;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-image"></div>
+        <div class="profile-name">
+            <a href = "https://github.com/chieyoun" target="_blank"><img alt="GitHub" src ="https://img.shields.io/badge/chieyoun-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
+        </div>
+        <a href="https://www.instagram.com/chieyoun_oui/" target="_blank"><img src="https://img.shields.io/badge/chieyoun__oui-E4405F?style=instagram&logo=instagram&logoColor=white"/></a>
+        <a href="https://velog.io/@chieyoun" target="_blank"><img src="https://img.shields.io/badge/velog-20C997?style=velog&logo=velog&logoColor=white"/></a>
+        <a href="#" target="_blank"><img src="https://img.shields.io/badge/Spring.codbs@gmail.com-EA4335?style=gmail&logo=gmail&logoColor=white"/></a>
+    </div>
+    
+    <div class="site-container">
+        <p class="date">2023.07.03</p>
+
+        <a href="http://refresh.jcy.kro.kr/" class="site-link">리뉴얼</a>
+        <hr class="hr">
+        <a href="사이트 링크" class="side-site-link ">github.io</a>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
