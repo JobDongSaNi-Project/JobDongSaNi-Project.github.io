@@ -1,87 +1,685 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body{
-            /* background: linear-gradient(black 50%, rgb(255, 255, 255) 80%,black 90%); */
-            background-color: rgb(238, 233, 226);
-        }
-        .profile-container {
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-image: url("https://avatars.githubusercontent.com/u/81201101?v=4");
-            /* background-color: gray; 프로필 이미지에 해당하는 배경색을 지정하세요. */
-            margin: 0 auto;
-        }
-        
-        .profile-name {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        
-        .site-container {
-            border-radius: 10px;
-            background-color:rgb(156, 204, 156); /* 사이트 정보를 포함하는 div의 배경색을 지정하세요. */
-            width: 300px;
-            padding: 15px;
-            margin: 20px auto;
-            text-align: center;
-            border: 1px solid rgb(88, 143, 88);
-            
-        }
-        
-        .site-link {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        .side-site-link {
-            font-size: 0.7rem;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            
-        }
-        .date{  
-            margin: 0;
-            text-align: right;
-            font-size: 0.7rem;
-            text-decoration: none;
-            color: black;
-            /* font-weight: bold; */
-        }
-        .hr{
-            width: 70%;
-            border : 0px;
-            border-top: 1px dashed #747474;
-        }
-    </style>
-</head>
-<body>
-    <div class="profile-container">
-        <div class="profile-image"></div>
-        <div class="profile-name">
-            <a href = "https://github.com/chieyoun" target="_blank"><img alt="GitHub" src ="https://img.shields.io/badge/chieyoun-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
-        </div>
-        <a href="https://www.instagram.com/chieyoun_oui/" target="_blank"><img src="https://img.shields.io/badge/chieyoun__oui-E4405F?style=instagram&logo=instagram&logoColor=white"/></a>
-        <a href="https://velog.io/@chieyoun" target="_blank"><img src="https://img.shields.io/badge/velog-20C997?style=velog&logo=velog&logoColor=white"/></a>
-        <a href="#" target="_blank"><img src="https://img.shields.io/badge/Spring.codbs@gmail.com-EA4335?style=gmail&logo=gmail&logoColor=white"/></a>
-    </div>
-    
-    <div class="site-container">
-        <p class="date">2023.07.03</p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>RefreshHomeP</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-        <a href="http://refresh.jcy.kro.kr/" class="site-link">리뉴얼</a>
-        <hr class="hr">
-        <a href="https://jobdongsani-project.github.io" class="side-site-link ">github.io</a>
-        <br>
-        <br>
-    </div>
-</body>
-</html>
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="bd6a0f7f-7832-48b8-86ed-2b7935103f71" class="page sans"><header><h1 class="page-title">RefreshHomeP</h1><p class="page-description"></p></header><div class="page-body"><h2 id="a02effda-6bb5-4a54-a279-d7a2064e609f" class="">1. 프로젝트 개요</h2><h3 id="ff8aaeb3-3af1-46a2-a2e8-53e0e93970ff" class="">프로젝트 주제</h3><ul id="e8b9f7cf-902c-43e4-838e-2cac9cf8c2b5" class="bulleted-list"><li style="list-style-type:disc">10년 이상 방치된 기업 홍보용 사이트 리뉴얼 사이트 제작</li></ul><p id="f27e7964-229a-4385-bae3-7c0761a0acc7" class="">
+</p><h3 id="362c4fe7-41f0-4af6-bb98-65f8ae04609c" class="">선정 배경</h3><ol type="1" id="7aa2b706-f649-4b31-9e6a-0239bd8008a8" class="numbered-list" start="1"><li><strong>관리되지 않은 회사의 사이트는 고객에게 신뢰성을 주기 힘듦.</strong><ul id="c2d61a2f-83a7-477a-83a3-d8a346ff8b1e" class="bulleted-list"><li style="list-style-type:disc">오래된 기업 사이트를 리뉴얼하며 사용자들에게 전문적이고 현대적인 이미지를 제공</li></ul><ul id="8f736504-4b7f-4cbe-adc1-7835c7bd0762" class="bulleted-list"><li style="list-style-type:disc">기업 브랜딩에 기여. 또한, 검색 엔진 최적화를 통해 더 많은 방문자를 유입되는 것을 목적으로 함.</li></ul></li></ol><ol type="1" id="a53bed10-9acb-4e3e-81b9-4bfbb844277c" class="numbered-list" start="2"><li><strong>오직 PC, 데스크탑 환경만을 고려하여 제작된 사이트는 모바일 기기 사용자에게 불편한 사이트가 됨.</strong><ul id="c70f672c-67e0-48c0-b152-bda948cd69b6" class="bulleted-list"><li style="list-style-type:disc">사용자 중심의 정보 제공과 반응형 웹을 통해 모바일 최적화를 하여 사용자 만족도를 높임</li></ul></li></ol><p id="442dd5cd-86c8-47df-8fe5-e5831be0aa1c" class="">
+</p><h3 id="851bdd7b-78f1-4bee-b07e-b1d8170fcf48" class="">개발 및 수행 목표</h3><p id="22b262e7-3f3b-4339-b643-dd7c3af4579d" class="">우리의 주요 목표는 기존 웹사이트보다 더 나은 디자인을 구현하여 회사의 이미지에 적합하고 어울리는 리뉴얼된 반응형 웹사이트를 개발하는 것.</p><p id="3d40855b-bb43-4853-b5a9-a658f924e886" class="">
+</p><h2 id="b2e1e05b-9a99-43ce-936d-d1c55e4a5af7" class="">2. 팀 소개</h2><div id="ba637d79-6192-4fe9-8789-6ed638680fd8" class="column-list"><div id="54e651c9-5126-4f73-a93d-13b430fb508b" style="width:33.33333333333333%" class="column"><h3 id="616f60dc-b543-4fd0-8bf7-76b4a4f27f58" class="">조채윤</h3><ul id="42d09fd3-c154-4e4c-aff6-463aab7adf58" class="bulleted-list"><li style="list-style-type:disc">역할 : 백엔드</li></ul><ul id="e216d210-a9e6-4d25-ba5c-2dbc57d6e3df" class="bulleted-list"><li style="list-style-type:disc">이메일 : Spring.codbs@gmail.com</li></ul><ul id="35530939-aea5-4da4-a892-139b231e87c0" class="bulleted-list"><li style="list-style-type:disc">깃허브 : <a href="https://github.com/chieyoun">https://github.com/chieyoun</a></li></ul><p id="23e6aec6-a23a-4c7b-b7f5-cb5e641ab6ef" class="">
+</p></div><div id="617d6bc2-9701-4bae-b6f5-f78331f1d850" style="width:33.33333333333333%" class="column"><h3 id="814bf8b7-a177-4cf1-ac61-a88d05a7b55e" class="">이수빈</h3><ul id="469e75b5-e3e1-4ac1-8a00-82cda8dc20ec" class="bulleted-list"><li style="list-style-type:disc">역할 : 디자인, 프론트</li></ul><ul id="dd75165d-05b5-4b55-8047-db5dee34c59f" class="bulleted-list"><li style="list-style-type:disc">이메일 : dfox0505@naver.com</li></ul><ul id="f8735224-7a31-42d8-a4cc-df9cdb2636d5" class="bulleted-list"><li style="list-style-type:disc">깃허브 : <a href="https://github.com/subann">https://github.com/subann</a></li></ul></div><div id="7011ce35-49e1-4b5b-9bf5-fe43e57bf5a4" style="width:33.33333333333333%" class="column"><h3 id="940d6387-f4f8-48ae-bf27-2ceb42be3df6" class="">한채영</h3><ul id="aa02d17b-f094-4abc-8185-d2ac558f3923" class="bulleted-list"><li style="list-style-type:disc">역할 : 디자인, 프론트</li></ul><ul id="b277dc2e-3140-47ac-ab66-12170cbae81f" class="bulleted-list"><li style="list-style-type:disc">이메일 : gks4167@naver.com</li></ul><ul id="13fe1231-4c93-4279-bee9-ba20283ba9b9" class="bulleted-list"><li style="list-style-type:disc">깃허브 : <a href="https://github.com/hanchaeyoung">https://github.com/hanchaeyoung</a></li></ul></div></div><h2 id="dfcca174-f1de-41de-a768-d05485471766" class="">3. 사용 기술</h2><h3 id="e249eafb-afcb-4e92-9edb-a475397ca053" class="">개발에 사용한 기술</h3><p id="5ab237e4-ed4b-4dda-8df7-a7cb7feedd59" class="">html, css, javascript, Spring, mysql, emailjs</p><h3 id="5317d124-ab13-4e39-a27d-4fd3cbe51667" class="">개발에 소요된 물품 및 준비물</h3><p id="93dbe323-6b53-4775-a813-7be566d5594b" class="">웹서버</p><p id="7c3d5da6-d2ad-430b-bf92-e34c4e6eaef8" class="">
+</p><h2 id="89a80b58-793c-42fa-8605-981161222f35" class="">4. 프로젝트 진행 과정 (월별 진행상황)</h2><p id="9c38280c-5338-4a83-ad1d-4ec442980155" class="">3월 : 홈페이지 디자인</p><p id="5f229fa7-8606-4eb3-ae9f-6b02dc8cbfe3" class="">4월 : 웹 개발</p><p id="dbcfbac8-7d4e-468e-b537-d0c3457a60bb" class="">5월 : 웹 개발</p><p id="bedeefde-a280-43eb-86d2-f6ce3bf6f96f" class="">6월 : 웹 보완</p><p id="e9ebdfa2-78ea-4f1d-b84a-05b3efb489b1" class="">7월 : 수정 및 보완</p><p id="d192b82e-8d78-4349-9c62-827042cb588f" class="">
+</p><h2 id="f9db41f9-a582-4761-aabb-85b0bf3fb226" class="">5. 프로젝트 상세 소개</h2><h3 id="e9f0d6be-4883-4075-a55c-13a9f01e4abc" class="">레이아웃 세부 설명</h3><ul id="e81fdbab-3b59-4b1b-a021-82e4c49b2185" class="bulleted-list"><li style="list-style-type:disc">header : 회사 로고 및 목록</li></ul><ul id="e7958603-b561-446d-a244-c85113d0ebd8" class="bulleted-list"><li style="list-style-type:disc">main : 회사 소개 및 제품소개, 고객지원(공지사항, FAQ), 견적 문의</li></ul><ul id="840013ec-7d4b-450f-9d3e-ade804d7cbe3" class="bulleted-list"><li style="list-style-type:disc">footer : 회사 정보</li></ul><h3 id="49de0e7e-25d1-495a-8fee-3ce567745f66" class="">데이터베이스 / 데이터플로우 / 시스템 구조</h3><figure id="b004b13b-07c8-45ea-8279-cfd83e9e56bc" class="image"><a href="asset/db.png"><img style="width:1511px" src="asset/db.png"/></a></figure><h3 id="4b4e8aac-106f-4beb-bd96-5d6346d0bb27" class="">사용자 수행에 따른 세부 동작 과정</h3><ul id="9ad59648-2e09-4d9f-83ee-1e7ed2975bf7" class="bulleted-list"><li style="list-style-type:disc"><strong>삼정테크</strong><ul id="e24140ad-fec2-4bfb-bb42-4dd46121c05a" class="bulleted-list"><li style="list-style-type:circle">header에 있는 회사소개, 제품소개, 고객지원, 견적문의를 누르면 해당하는 위치로 이동</li></ul><ul id="431593bb-df7c-4b77-a996-bea3b3696292" class="bulleted-list"><li style="list-style-type:circle">제품소개에 있는 제품들을 누르면 제품 상세페이지로 이동</li></ul><ul id="bff26df1-8477-4e07-995b-faad860491fd" class="bulleted-list"><li style="list-style-type:circle">고객지원에 있는 공지사항을 누르면 공지사항 상세페이지로 이동</li></ul><ul id="98278c65-50da-4261-8875-80563ee56492" class="bulleted-list"><li style="list-style-type:circle">고객지원에 있는 FAQ를 누르면 드롭다운으로 FAQ 내용이 보임</li></ul><ul id="5c2c9ca9-5470-419e-8b2e-76b7bc9cfe5c" class="bulleted-list"><li style="list-style-type:circle">견적문의에 정보를 입력하고 제출 버튼을 누르면 관리자에게 이메일로 전송됨</li></ul></li></ul><p id="0492338d-7f0a-4701-a4b2-56e2c38f42cc" class="">
+</p><ul id="1a36723b-bc95-4b4e-8873-f6589309fe64" class="bulleted-list"><li style="list-style-type:disc"><strong>잉크테크</strong> <ul id="0a429c0b-397d-4885-aacd-3d94dced911f" class="bulleted-list"><li style="list-style-type:circle">메인페이지<ul id="7c46f403-d826-49ce-9e68-407deaaaf9ac" class="bulleted-list"><li style="list-style-type:square">메인페이지 header에서 home, 제품소개, 견적문의를 확인할 수 있고, 누르면 그 페이지로 이동.</li></ul><ul id="2c12e06e-a44f-4800-8dc2-01517a071ede" class="bulleted-list"><li style="list-style-type:square">More about us를 누르면 잉크테크가 개발한 제품을 볼 수 있도록 제품소개 페이지로 이동.</li></ul><ul id="177c5af1-08fc-47e0-a621-1b41814c7c1d" class="bulleted-list"><li style="list-style-type:square">Our gallery에서 개발 제품과 기술연구소를 확인할 수 있음.</li></ul></li></ul><ul id="b6759115-e51c-4a9f-b6e3-da62d46b0e90" class="bulleted-list"><li style="list-style-type:circle">제품소개페이지<ul id="a0a3013a-f053-4b45-a69b-66c68ccfa6f1" class="bulleted-list"><li style="list-style-type:square">디지털 프린팅 시스템을 만나보세요 버튼을 누르면 잉크테크의 프린트 사업 페지를 확인할 수 있음.</li></ul><ul id="d4650598-5154-4aa0-b837-849b74654826" class="bulleted-list"><li style="list-style-type:square">디지털 프린팅 시스템 이미지로 마우스 커서를 가져가면 이미지가 확대됨.</li></ul></li></ul><ul id="74fad36e-bc12-42b7-8fa5-fde003483c66" class="bulleted-list"><li style="list-style-type:circle">견적문의페이지<ul id="809ad84b-eb25-40d0-839f-00641f6a6733" class="bulleted-list"><li style="list-style-type:square">지도를 움직일 수 있습니다.</li></ul><ul id="daa035ec-9a46-494a-a44c-ef5435c73586" class="bulleted-list"><li style="list-style-type:square">이름과 이메일, 문의 할 내용을 입력시 관리자에게 내용을 전달합니다.</li></ul></li></ul></li></ul><p id="2e2dd38a-36e8-43d7-8640-f4ef4aea1df5" class="">
+</p><h3 id="82b9dba5-a6ee-4735-801f-832b12487187" class="">레이아웃 세부 설명</h3><ul id="1abd6bc8-cfeb-48a8-a19a-555861b2dbac" class="bulleted-list"><li style="list-style-type:disc">header: 회사 로고 및 목록</li></ul><ul id="2715804c-403f-4026-b10d-7abcb35de888" class="bulleted-list"><li style="list-style-type:disc">section: 회사의 간단한 소개와 제품 갤러리</li></ul><ul id="964932a5-d917-4e82-8a91-d3cfb93e79df" class="bulleted-list"><li style="list-style-type:disc">footer: 회사 정보</li></ul><p id="203c16f3-e2c2-4bf6-b94f-5cd60bd7e02a" class="">
+</p><h2 id="55611c5a-a5a4-4696-b9ef-606bee14fc90" class="">6. 프로젝트 추진 결과</h2><h3 id="8456fd2f-06f5-4d29-8179-d3d04d7613b2" class="">수행 과정 및 결과 분석</h3><h3 id="94e5cee6-f97b-4bf0-ba45-78529b95b363" class=""><strong>개발 과정</strong></h3><ol type="1" id="add92b67-f188-4d41-bf27-6d1c099762f1" class="numbered-list" start="1"><li><strong>3월</strong><ul id="cf634c72-4a11-41b7-9197-d7ac54c8ecb9" class="bulleted-list"><li style="list-style-type:disc">한채영: 선정한 회사의 자료 조사 및 유형 파악, 계획서 작성 및 스토리보드 작성</li></ul><ul id="4a58be4c-d53b-482c-89cb-240a5740fa40" class="bulleted-list"><li style="list-style-type:disc">이수빈: 홈페이지 디자인 초기 설계</li></ul><ul id="f9b15a5a-feb4-4fcc-a1cc-0d98ba5fa380" class="bulleted-list"><li style="list-style-type:disc">조채윤: db 설계, 구축, 공지사항 구현</li></ul></li></ol><ol type="1" id="caffc9eb-06ac-40a3-b469-3271a8d73be2" class="numbered-list" start="2"><li><strong>4월</strong><ul id="ff5e7212-f6ec-40ce-8065-fcfabef417cf" class="bulleted-list"><li style="list-style-type:disc">한채영: 삼정테크 홈페이지 제작</li></ul><ul id="52badba1-e560-4a43-bc6e-74161271269a" class="bulleted-list"><li style="list-style-type:disc">이수빈: 디자인 설계 및 메인 컬러 선정</li></ul><ul id="f8c7f2bf-2fe9-4ce0-aaff-03b460275812" class="bulleted-list"><li style="list-style-type:disc">조채윤: 로그인, 로그아웃 기능 구현</li></ul></li></ol><ol type="1" id="9d16a399-54f3-487b-af88-515373029352" class="numbered-list" start="3"><li><strong>5월</strong><ul id="03035c41-a4a0-482e-b983-6403a34230c9" class="bulleted-list"><li style="list-style-type:disc">한채영: 삼정테크 홈페이지 제작 및 백엔드 연결</li></ul><ul id="4045d261-a446-4f74-9f79-afea10086a76" class="bulleted-list"><li style="list-style-type:disc">이수빈: 메인 페이지 코딩 시작</li></ul><ul id="750bd79e-2499-4984-b4d7-6ff8b04a1a96" class="bulleted-list"><li style="list-style-type:disc">조채윤: 기업 제품 관리를 위한 crud 구현</li></ul></li></ol><ol type="1" id="432b9d21-579f-4a55-a0c3-9a5dff7f48b2" class="numbered-list" start="4"><li><strong>6월</strong><ul id="7f0b1bc4-3079-4831-b7dd-d934a9d0b896" class="bulleted-list"><li style="list-style-type:disc">한채영: 삼정테크 메인 사진 선정 및 홈페이지 디자인 수정</li></ul><ul id="3d1c035a-1f2a-472c-a19c-b11adc8fcd16" class="bulleted-list"><li style="list-style-type:disc">이수빈: 서브페이지 코딩 및 GitHub 업로드</li></ul><ul id="35c873a9-44e2-43d0-b2ea-c2db63349384" class="bulleted-list"><li style="list-style-type:disc">조채윤: 서버 환경 구축 및 업로드</li></ul></li></ol><ol type="1" id="9290d771-5a9f-4f07-94bb-b8a73a968266" class="numbered-list" start="5"><li><strong>7월</strong><ul id="ff6180d3-5501-4046-a2bc-a7b6fb5841e0" class="bulleted-list"><li style="list-style-type:disc">한채영: 수정 및 보완 작업</li></ul><ul id="a5fa6f38-1f34-4cd7-aed3-43635e4a9c03" class="bulleted-list"><li style="list-style-type:disc">이수빈: 수정 및 보완 작업</li></ul><ul id="d3587094-8371-4f11-bbd7-ffd8c24649a4" class="bulleted-list"><li style="list-style-type:disc">조채윤: 버그 및 오류 사항 수정, 보완</li></ul></li></ol><h3 id="3054bf33-2bab-4b56-965a-6fda2ac7a3db" class="">결과 분석</h3><p id="908a5dbd-f20c-46bf-a015-104ad1dc9ea7" class="">각 팀원이 설계한 디자인 아이디어와 선정한 컬러 팔레트를 충실히 반영하여 웹사이트를 개발하여 완성했고, 이 과정에서 기존 웹페이지보다 더 나은 디자인과 시각적인 효과를 구현하기 위해 노력했습니다. 우리 팀은 사용자 경험과 시각적인 매력을 고려하여 각 요소들의 배치와 디자인을 최적화하였습니다.</p><h3 id="32dabb99-88dd-4189-a7e0-cdbba501bb5e" class="">유지 보수 계획</h3><ul id="0d232a17-ed91-4a13-a7e9-76bc132f35bd" class="bulleted-list"><li style="list-style-type:disc">성능 최적화: 웹사이트의 로딩 속도를 개선하기 위해 캐싱 기능을 도입하거나, 이미지 최적화 기술을 적용하여 페이지의 렌더링 속도를 향상 시킬 예정입니다.</li></ul><ul id="6c57c9a4-8132-40b9-b342-0f1bb5e83645" class="bulleted-list"><li style="list-style-type:disc">보안 업그레이드: 웹사이트의 보안 취약점을 해결하기 위해 최신 보안 패치를 적용하고, SSL 인증서를 갱신하여 사용자 데이터의 보호를 강화할 예정입니다.</li></ul><ul id="8b5c5acf-9aa5-41b8-b6f3-3df70d727c9b" class="bulleted-list"><li style="list-style-type:disc">향상된 검색 엔진 최적화: 검색 엔진 최적화를 위해 최신 SEO 기법을 적용하고, 구조적인 데이터 마크업을 강화하여 검색 결과에서 더욱 높은 순위로 노출되도록 할 예정입니다.</li></ul></div></article></body></html>
